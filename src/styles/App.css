@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=BBH+Hegarty&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-bbh: "BBH Hegarty", sans-serif;
+  --color-t-red: #ff4c4b;
+  --color-t-yellow: #ffca29;
+  --color-t-blue: #3a6ea5;
+}
+
+@layer components {
+  .score-heading {
+    font-family: "BBH Hegarty", sans-serif;
+    font-size: 1.5rem;
+    color: #fff6;
+  }
+
+  .score {
+    font-size: 8rem;
+    font-family: "BBH Hegarty", sans-serif;
+    line-height: 1;
+    color: #ffca29;
+  }
+}
