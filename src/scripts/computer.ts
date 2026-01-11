@@ -103,7 +103,7 @@ function minmax(board: string[][], depth: number, isMax: boolean): number {
   }
 }
 
-export default function findBestMove(board: string[][]): Move {
+export function findBestMove(board: string[][]): Move {
   let bestVal = -1000;
   const bestMove: Move = { row: -1, col: -1 };
 

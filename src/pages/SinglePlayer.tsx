@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "../components/Header";
-import { default as findBestMove, default as Move } from "../scripts/computer";
+import { findBestMove, type Move } from "../scripts/computer";
 import { checkForWin, generateRandomNumber } from "../scripts/utils";
 import "../styles/App.css";
 
