@@ -12,7 +12,7 @@ export default function Header({
   resetBoard
 }: {
   game?: boolean;
-  move: string;
+  move?: string;
   player1Name?: string;
   player2Name?: string;
   numberOfMoves?: number;
