@@ -72,6 +72,7 @@ export default function MultiPlayer({
       {/* TOP BAR */}
       <Header
         game={true}
+        move={move}
         player1Name={player1Name}
         player2Name={player2Name}
         numberOfMoves={numberOfMoves}
@@ -88,7 +89,7 @@ export default function MultiPlayer({
             <button
               type="button"
               key={i + j}
-              className="font-bbh text-t-red bg-t-yellow flex size-24 items-center justify-center rounded-2xl text-8xl md:size-48 md:rounded-3xl md:text-[12rem]"
+              className={`font-bbh text-t-red bg-t-yellow flex size-24 items-center justify-center rounded-2xl ${winner ? "border-5" : "border-none"} text-8xl md:size-48 md:rounded-3xl md:text-[12rem]`}
               onClick={(e) => makeMove(i, j, e)}
               disabled={checkForWin(board)}
             >
